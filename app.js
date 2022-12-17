@@ -1,10 +1,10 @@
-const dark_board_color = "#100720";
-const light_board_color = "#31087B";
+const dark_board_color = "#3F0071";
+const light_board_color = "#810CA8";
 const dash_color = "#FEFCF3";
-const attacking_queen = "#EB455F";
-const queen_cannot_be_placed_here = "#C21010";
-const board_border = "0.3px solid #fff";
-const arrangements_possible_text = "#24A19C";
+const attacking_queen = "#EB1D36";
+const queen_cannot_be_placed_here = "#E94560";
+const board_border = "0.4px solid #fff";
+const arrangements_possible_text = "#1CD6CE";
 // search board number background and text color in the css file
 // for the board header color.
 // search box shadow of board in the css file for the

@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
   padding: 0;
-    margin: 0;
+  margin: 0;
 }
 
 img,
@@ -35,42 +35,42 @@ ul {
 html,
 body {
   height: 100%;
-  }
-  
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    background-color: #181D31;
-  }
-  
-  input,
-  button,
-  textarea,
-  select {
-    font: inherit;
-  }
-  
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-  
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: #181D31;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 :focus {
@@ -95,10 +95,10 @@ button:active {
   position: absolute;
   left: 50%;
   margin-left: -225px;
-    width: 100%;
+  width: 100%;
   max-width: 450px;
   top: 5rem;
-    display: flex;
+  display: flex;
     flex-direction: column;
     height: 100vh;
     gap: 2rem;
@@ -115,10 +115,10 @@ button:active {
 .numberbox {
   width: 100%;
   font-size: 18px;
-    font-weight: 500;
+  font-weight: 500;
     padding: 4px 0;
   border: none;
-  border-bottom: 3px solid #2ec4b6;
+  border-bottom: 3px solid #1CD6CE;
   outline: none;
   background: transparent;
   color: #fff;
@@ -128,9 +128,9 @@ button:active {
   position: absolute;
   top: 4px;
   left: 0px;
-  color: #2ec4b6;
+  color: #1CD6CE;
   font-weight: 500;
-    font-size: 1rem;
+  font-size: 1rem;
   pointer-events: none;
   transition: 0.3s;
 }
@@ -165,7 +165,7 @@ button:active {
   top: -15px;
   font-size: 14px;
   font-weight: 700;
-  color: #fa7921;
+  color: #F77E21;
 }
 
 .slider::before {
@@ -175,7 +175,7 @@ button:active {
   right: 0px;
   font-size: 14px;
   font-weight: 700;
-  color: #fa7921;
+  color: #F77E21;
 }
 
 /* Google chrome */
@@ -218,7 +218,7 @@ button:active {
 #progress-bar {
   width: 60%;
   height: 7px;
-  background: #ffd200;
+  background: #FFF80A;
   border-radius: 7px;
   position: absolute;
   top: 7px;
@@ -233,7 +233,7 @@ button:active {
   color: #fdfffc;
   width: 80px;
   height: 35px;
-  background-color: #f72585;
+  background-color: #ea005e;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -248,7 +248,7 @@ button:active {
 
 .queen-arrangement {
   position: relative;
-  top: 20rem;
+  top: 22rem;
     margin-bottom: 2rem;
   text-align: center;
   font-size: 20px;
@@ -261,7 +261,7 @@ button:active {
   display: flex;
   gap: 2rem;
   width: 80%;
-  top: 20rem;
+  top: 23rem;
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -272,9 +272,9 @@ button:active {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 10px;
-/* ! box showdow of the board */
-  box-shadow: 0 4px 8px 0 rgba(248, 0, 0, 1);
+  margin: 0 7px;
+    /* ! box showdow of the board */
+  box-shadow: 0 4px 8px 0 rgba(71, 181, 255, 0.4);
   border-radius: 3px;
   bottom: 10px;
 }
@@ -298,16 +298,17 @@ h4 {
   position: relative;
   top: -5px;
   padding: 8px;
-  width: 95%;
-/* ! board number background color */
-  background-color: #0582ca;
+  width: 89%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    /* ! board number background color */
+  background-color: #1589a3;
 
   align-self: center;
   /* ! board number text color */
-  color: #fdfffc;
-  
+  color: #EEEEEE;
   text-align: center;
-  border-radius: 4px 4px 0 0;
+  border-radius: 6px 6px 0 0;
 }
 
 @media screen and (max-width: 500px) {

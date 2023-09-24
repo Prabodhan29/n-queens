@@ -268,3 +268,5 @@ window.addEventListener("load", () => {
     document.body.removeChild(loader);
   });
 });
+
+// you can open a vs code like window in github by pressing the '.' key.

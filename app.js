@@ -10,7 +10,6 @@ const arrangements_possible_text = "#1CD6CE";
 // search box shadow of board in the css file for the
 // outline of each board.
 
-
 const numberbox = document.getElementById("numberbox");
 const slider = document.getElementById("slider");
 const progressBar = document.getElementById("progress-bar");
@@ -217,8 +216,7 @@ playButton.onclick = async function visualise() {
 
   const para = document.createElement("p");
   para.setAttribute("class", "queen-info");
-  para.innerHTML = `For ${n}x${n} board, ${array[n]
-    } arrangements are possible.`;
+  para.innerHTML = `For ${n}x${n} board, ${array[n]} arrangements are possible.`;
   arrangement.appendChild(para);
   para.style.color = arrangements_possible_text;
 

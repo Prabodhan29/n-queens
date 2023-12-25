@@ -25,23 +25,23 @@ ul {
 }
 
 :root {
-  --font-family-roboto: "Roboto", sans-serif;
-  --font-family-poppins: "Poppins", sans-serif;
   --focus-color: #ea005e;
   --loader-dark-clr: #541212;
   --loader-light-clr: #E5BA73;
 }
 
-html,
-body {
-  height: 100%;
-}
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   background-color: #181D31;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+html {
+  max-height: 100%;
 }
 
 input,
@@ -91,6 +91,17 @@ button:active {
   outline: none;
 }
 
+.name_div {
+  border-radius: 0 0 7px 0;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  box-shadow: rgba(136, 165, 191, 0.2) 6px 2px 16px 0px, rgba(255, 255, 255, 0.3) -6px -2px 16px 0px;
+}
+
 .n-queen {
   position: absolute;
   left: 50%;
@@ -99,11 +110,10 @@ button:active {
   max-width: 450px;
   top: 5rem;
   display: flex;
-    flex-direction: column;
-    height: 100vh;
-    gap: 2rem;
-    align-items: flex-start;
-    justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .inputbox {
@@ -116,7 +126,7 @@ button:active {
   width: 100%;
   font-size: 18px;
   font-weight: 500;
-    padding: 4px 0;
+  padding: 4px 0;
   border: none;
   border-bottom: 3px solid #1CD6CE;
   outline: none;
@@ -222,7 +232,6 @@ button:active {
   border-radius: 7px;
   position: absolute;
   top: 7px;
-
 }
 
 .play-button {
@@ -249,7 +258,7 @@ button:active {
 .queen-arrangement {
   position: relative;
   top: 22rem;
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -265,6 +274,7 @@ button:active {
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-bottom: 2rem;
 }
 
 #n-queen-board div {
@@ -273,7 +283,7 @@ button:active {
   justify-content: center;
   flex-direction: column;
   margin: 0 7px;
-    /* ! box showdow of the board */
+  /* ! box showdow of the board */
   box-shadow: 0 4px 8px 0 rgba(71, 181, 255, 0.4);
   border-radius: 3px;
   bottom: 10px;
@@ -299,9 +309,9 @@ h4 {
   top: -5px;
   padding: 8px;
   width: 89%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.3rem;
-    /* ! board number background color */
+  font-size: 1.4rem;
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  /* ! board number background color */
   background-color: #1589a3;
 
   align-self: center;
@@ -322,12 +332,16 @@ h4 {
 
   #n-queen-board {
     justify-content: center;
+    padding-bottom: 2rem;
   }
 
   .popup .row {
     margin: 12px 12px 0 12px;
   }
 
+  .name_div {
+    padding: 8px;
+  }
 }
 
 /*! Page loader */

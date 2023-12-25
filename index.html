@@ -4,81 +4,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>N-Queen-Visualiser</title>
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&family=Dongle:wght@300;400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet" />
+  <title>N-Queens-Visualiser</title>
 
   <!-- Font Awesome CDN and kit -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
 
-  <!-- Bootstrap CDN-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- Favicon icons -->
+  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="Images/favicon-16x16.png" sizes="16x16" />
+
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="name_div">
+    <p>Developed by Prabodhan</p>
+  </div>
   <div class="n-queen">
     <div class="inputbox">
       <input type="number" class="numberbox" id="numberbox" required />
       <label>Enter total Queens: </label>
-      </div>
+    </div>
 
     <div class="slider-container">
       <input class="slider" id="slider" type="range" min="0" max="100" value="60" />
       <div id="progress-bar"></div>
-      </div>
+    </div>
 
     <button class="play-button" id="play-button">
       <i class="fa fa-play" aria-hidden="true"></i> Play
     </button>
-    </div>
+  </div>
 
   <div class="queen-arrangement" id="queen-arrangement"></div>
   <div id="n-queen-board"></div>
-<!-- Page loader -->
-<div class="loader">
-  <div class="container">
-    <div class="chess-icon"></div>
-  </div>
-</div>
-
-
-
-<section class="popup">
-
-  <div class="container">
-    <div class="row">
-
-      <div class="col-sm-12 popup-content">
-        <div
-          class="alert fade alert-simple alert-warning alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
-          role="alert" data-brk-library="component__alert">
-
-          <i class="start-icon fa fa-exclamation-triangle faa-flash animated"></i>
-          <strong class="font__weight-semibold">Queen value should be between 2 and 8</strong>
-          <div class="close-btn">
-            <i class="fa fa-times warning"></i>
-          </div>
-        </div>
-
-      </div>
-
-
+  <!-- Page loader -->
+  <div class="loader">
+    <div class="container">
+      <div class="chess-icon"></div>
     </div>
   </div>
-</section>
 
+  <section class="popup">
+    <div class="container">
+      <div class="row">
 
+        <div class="col-sm-12 popup-content">
+          <div
+            class="alert fade alert-simple alert-warning alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+            role="alert" data-brk-library="component__alert">
 
+            <i class="start-icon fa fa-exclamation-triangle faa-flash animated"></i>
+            <strong class="font__weight-semibold">Queen value should be between 2 and 8</strong>
+            <div class="close-btn">
+              <i class="fa fa-times warning"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-<script defer src="app.js"></script>
+  <script defer src="app.js"></script>
 </body>
 
 </html>
